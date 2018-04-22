@@ -16,7 +16,15 @@ class String
 
   def count_sentences
     holder=[]
-    holder<<self.split('.','?','!')
-    return holder.count-1
+    self.split('.').each do |a|
+      holder<<a
+    end
+    self.split('?').each do |a|
+      holder<<a
+    end
+    self.split('!').each do |a|
+      holder<<a
+    end
+    return holder.count
   end
 end
