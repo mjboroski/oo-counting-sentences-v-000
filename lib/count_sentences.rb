@@ -19,12 +19,12 @@ class String
     self.split('.').each do |a|
       holder<<a
     end
-    self.split('?').each do |a|
-      holder<<a
+    self.split('?').each do |b|
+      holder<<b
     end
-    self.split('!').each do |a|
-      holder<<a
+    self.split('!').each do |c|
+      holder<<c
     end
-    return holder.count%2+holder.count/2
+    return holder.count
   end
 end
