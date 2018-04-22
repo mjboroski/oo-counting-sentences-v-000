@@ -15,6 +15,8 @@ class String
   end
 
   def count_sentences
-
+    holder=[]
+    holder<<self.split(".","?","!")
+    return holder.count
   end
 end
