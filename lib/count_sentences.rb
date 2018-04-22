@@ -25,6 +25,6 @@ class String
     self.split('!').each do |a|
       holder<<a
     end
-    return holder.count
+    return holder.count%2+holder.count/2
   end
 end
